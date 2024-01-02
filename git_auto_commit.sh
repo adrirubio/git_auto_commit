@@ -15,6 +15,8 @@ if [ -n "$(git status --porcelain)" ]; then
 
   # Push changes to GitHub
   git push origin main
+
+  logger "Pushed to github correctly"
 else
-  echo "No changes to commit"
+  logger "No changes to commit"
 fi
