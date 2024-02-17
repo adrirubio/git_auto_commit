@@ -7,16 +7,19 @@ git pull
 
 # Check for changes
 if [ -n "$(git status --porcelain)" ]; then
-  # Stage all changes
-  git add -A .
 
-  # Commit with a generic message
-  git commit -m "Auto commit on $(date)"
+    git status
 
-  # Push changes to GitHub
-  git push origin main
+    # Stage all changes
+    git add -A .
 
-  logger "Pushed to github correctly"
+    # Commit with a generic message
+    git commit -m "Auto commit on $(date)"
+
+    # Push changes to GitHub
+    git push origin main
+
+    logger "Pushed to github correctly"
 else
-  logger "No changes to commit"
+    logger "No changes to commit"
 fi
