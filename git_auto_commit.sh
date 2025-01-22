@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the repository
-cd /home/adrian/Documents/AI_course
+cd /home/adrian/Documents/ai-course
 
 git pull
 
@@ -24,7 +24,7 @@ else
     logger "No changes to commit"
 fi
 
-cd /home/adrian/Documents/Perceptron
+cd /home/adrian/Documents/perceptron
 
 git pull
 
@@ -47,7 +47,7 @@ else
     logger "No changes to commit"
 fi
 
-cd /home/adrian/Documents/StoryCrafterLLM
+cd /home/adrian/Documents/ml-rover
 
 git pull
 
@@ -70,7 +70,7 @@ else
     logger "No changes to commit"
 fi
 
-cd /home/adrian/Documents/Mindful
+cd /home/adrian/Documents/mindful
 
 git pull
 
